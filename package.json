@@ -1,0 +1,26 @@
+{
+  "name": "poojapatel_portfolio",
+  "version": "1.0.0",
+  "description": "Developer Portfolio of Pooja Patel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poojapatel815/poojapatel_portfolio.git"
+  },
+  "keywords": [
+    "Software",
+    "Developer",
+    "Portfolio",
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Pooja Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poojapatel815/poojapatel_portfolio/issues"
+  },
+  "homepage": "https://github.com/poojapatel815/poojapatel_portfolio#readme"
+}
