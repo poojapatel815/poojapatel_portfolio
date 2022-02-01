@@ -11,4 +11,10 @@ router.get('/projects', indexController.projects);
 /* GET about page. */
 router.get('/about', indexController.about);
 
+/* GET services page. */
+router.get('/services', indexController.services);
+
+/* GET contact me page. */
+router.get('/contact', indexController.contact);
+
 module.exports = router;
