@@ -5,7 +5,7 @@
  */
 
  var app = require('./config/app');
- var debug = require('debug')('comp229003:server');
+ var debug = require('debug')('poojapatel_portfolio:server');
  var http = require('http');
  
  /**
