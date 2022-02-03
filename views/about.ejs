@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='@fortawesome/fontawesome-free/css/all.min.css' />
 </head>
 <body>
-    
+  <% include partials/header.ejs %>
+
+  <!--  ======================= Start Main Area ================================ -->
+  <main class="site-main">
+
+
+    <!--  ======================= Start About me Area =======================  -->
+    <section class="about-area">
+        <div class="container">
+            <div class="row">
+            <h1>Pooja Patel</h1><br>
+            <h5>Software Developer | Graphic Designer</h5>
+            <div class="image">
+            <img src="/images/Screenshot_2018-10-06-06-11-58-019.jpeg" alt="Photo of me">
+            </div>
+            <p>
+                I am an ambitious student and Software developer with proper training and experience in Java and its frameworks
+programming. Knowledgeable in wide range of development programming languages and methodologies. Bright critical
+thinker with proven talent for learning quickly in result-oriented environment. Aiming to gain more experience in the field
+of computer Science and Engineering
+            </p>
+            <div class="d-flex flex-row flex-wrap" id="download_resume-btn">
+                <button type="button" class="btn button primary-button mr-4 text-uppercase"><a href="/Resume/Resume.pdf" id="resume-btn">Download Resume</a></button>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!--  ======================= End About me Area =======================  -->
+
+  
+  
+  <% include partials/footer.ejs %>
+  </main>
+  
 </body>
 </html>
