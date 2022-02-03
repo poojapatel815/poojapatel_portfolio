@@ -12,8 +12,13 @@
 <body>
     
   <% include partials/header.ejs %>
+  <!--  ======================= Start Main Area ================================ -->
+  <main class="site-main">
 
-  <div class="container">
+  <!--  ======================= Start Contact me Area =======================  -->
+
+   <section class="contact-me">
+   <div class="container">
     <div class="text">Contact Me</div>
     <form action="#">
        <div class="form-row">
@@ -42,19 +47,19 @@
              <div class="underline"></div>
              <label for="">Write your message</label>
              <br />
-             <div class="form-row submit-btn">
-                <div class="input-data">
-                   <div class="inner"></div>
-                   <input type="submit" value="submit">
-                </div>
-             </div>
           </div>
        </div>
+         <div class="site-buttons">
+              <div class="d-flex flex-row flex-wrap">
+               <button type="submit" class="btn button primary-button mr-4 text-uppercase">Submit</button>
+              </div>
+         </div>
     </form>
  </div>
+ </section>
 
-  
-  
+   <!--  ======================= End Contact me Area =======================  -->
+
   <% include partials/footer.ejs %>
   
 </body>
