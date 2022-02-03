@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='@fortawesome/fontawesome-free/css/all.min.css' />
+</head>
+<body>
+  <% include partials/header.ejs %>
+
+  <!--  ======================= Start Main Area ================================ -->
+  <main class="site-main">
+
+    <!--  ====================== Start Services Area =============================  -->
+
+    <section class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center services-title">
+                    <h3 class="text-uppercase title-text">Services Offers</h3>
+                </div>
+            </div>
+            <div class="container services-list">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="/images/s1.png" alt="Services-1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Software developer</h5>
+                                <p class="card-text text-secondary">
+                                    Build bug free softwares using the latest technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="/images/s2.png" alt="Services-2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">ux/ui Designing</h5>
+                                <p class="card-text text-secondary">
+                                    Create consistent UI elements so that user will feel more comfortable and able to get things done more quickly. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="/images/s3.png" alt="Services-3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                                <p class="card-text text-secondary">
+                                    SIMPLICITY. Simplicity is the best way to go when considering the user experience and the usability of any website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="/images/s2.png" alt="Services-4">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Graphic Designing</h5>
+                                <p class="card-text text-secondary">
+                                    Create attractive vectors and illustrations using Adobe Illustrator.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ====================== End Services Area =============================  -->
+</main>
+  
+  
+  <% include partials/footer.ejs %>
+  
+</body>
+</html>
