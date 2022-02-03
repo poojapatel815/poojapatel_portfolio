@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='@fortawesome/fontawesome-free/css/all.min.css' />
+</head>
+<body>
+  <% include partials/header.ejs %>
+
+  <!--  ======================= Start Main Area ================================ -->
+  <main class="site-main">
+
+    <!--  ======================= Project Area =============================  -->
+
+    <section class="project-area">
+        <div class="container">
+            <div class="row grid">
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p1.jpg">
+                                <img src="./img/portfolio/p1.jpg" alt="portfolio-1" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Interview Management System</h4>
+                            <span class="text-secondary"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                                <img src="./img/portfolio/p2.jpg" alt="portfolio-2" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Paint Wall</h4>
+                            <span class="text-secondary">Popular, Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                                <img src="./img/portfolio/p3.jpg" alt="portfolio-3" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Female light</h4>
+                            <span class="text-secondary">Popular, Portfolio</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--  ======================= End Project Area =============================  -->
+
+  
+  
+  <% include partials/footer.ejs %>
+  </main>
+  <script src="/javascripts/appclient.js"></script>
+</body>
+</html>
