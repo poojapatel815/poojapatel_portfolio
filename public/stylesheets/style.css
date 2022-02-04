@@ -1,3 +1,18 @@
+
+/*-----------------Student Information------------*/
+/*----------------
+
+Student Name:Patel Poojaben Ghanshyambhai
+Student Id:301224016
+
+
+
+------------------*/
+
+
+
+
+
 /* -------------- css variables -----------------------*/ 
 @import url(/stylesheets/variable.css);
 
@@ -6,7 +21,6 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  overflow: hidden;
 }
 a{
   text-decoration: none;
@@ -304,3 +318,28 @@ form .form-row .textarea{
 }
 
 /* ------------------------------- End Contact me Area --------------------------------*/ 
+
+
+/* ---------------------------------- Footer Area ----------------------------------------*/ 
+
+footer.footer-area{
+  padding: 5rem 0;
+  background: url(/images/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+  font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+  font-size:22px;
+  padding: 2rem;
+  color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+  color: var(--primary-color);
+}
+
+
+/* --------------------------------- End Footer --------------------------------------*/ 
