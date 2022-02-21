@@ -1,0 +1,86 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='@fortawesome/fontawesome-free/css/all.min.css' />
+  </head>
+  <body>
+    <%- include ../partials/header.ejs %>
+
+<!-- Content for the Add_Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <br><br><br><br><br>
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <input type="hidden"
+                        name="id"
+                        value="<%= item._id %>"
+                    >
+                    <label for="itemTextField">Contact Name</label>
+                    <input type="text" class="form-control"
+                        id="itemTextField"
+                        placeholder="Enter the Contact Name"
+                        name="contact_name" 
+                        value="<%= item.contact_name %>"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="QtyTextField">Contact Number</label>
+                    <input type="number" class="form-control"
+                    id="QtyTextField"
+                    placeholder="Enter a contact no"
+                    name="contact_no" 
+                    value="<%= item.contact_no %>"
+                    required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="statusTextField">Email Address</label>
+                    <input type="text" class="form-control"
+                    id="statusTextField"
+                    placeholder="Enter a email address"
+                    name="email" 
+                    value="<%= item.email %>"
+                    >
+                </div>
+            </br>
+                <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-edit"></i> 
+                    Submit
+                </button>
+                
+                <a href="/inventory/list" class="btn btn-warning">
+                    <i class="fa fa-undo"></i> 
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/footer.ejs %>
+    
+  </body>
+  </html>
+  
+  
+  
+  
+  
+
+
+
+
