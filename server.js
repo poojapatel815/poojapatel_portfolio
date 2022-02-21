@@ -3,6 +3,8 @@
 /**
  * Module dependencies.
  */
+ 
+var dbConfig = require('./config/db');
 
  var app = require('./config/app');
  var debug = require('debug')('poojapatel_portfolio:server');
@@ -11,7 +13,7 @@
  /**
   * Get port from environment and store in Express.
   */
- 
+  let db = dbConfig();
  var port = normalizePort(process.env.PORT || '3000');
  app.set('port', port);
  
