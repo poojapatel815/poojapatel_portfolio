@@ -1,5 +1,9 @@
+
+
 let User = require('../models/user');
 let passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+
 
 exports.user = function(req, res, next) {
     res.render('user', { 
