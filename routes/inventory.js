@@ -3,7 +3,7 @@ let router = express.Router();
 
 let inventoryController = require('../controllers/inventory');
 
-/*  helper function for guard purposes
+//  helper function for guard purposes
 function requireAuth(req, res, next)
 {
     // check if the user is logged in
@@ -13,21 +13,21 @@ function requireAuth(req, res, next)
         return res.redirect('/users/signin');
     }
     next();
-}  */
+}  
 
 router.get('/', inventoryController.list);
 
 // GET Route for displaying the Add page - CREATE Operation 
-router.get('/add',inventoryController.displayAddPage); 
+router.get('/add',requireAuth,inventoryController.displayAddPage); 
 
 // POST Route for processing the Add page - CREATE Operation 
-router.post('/add',inventoryController.processAddPage); 
+router.post('/add',requireAuth,inventoryController.processAddPage); 
 
 //  Routers for edit
-router.get('/edit/:id', inventoryController.displayEditPage);
-router.post('/edit/:id', inventoryController.processEditPage);
+router.get('/edit/:id',requireAuth, inventoryController.displayEditPage);
+router.post('/edit/:id',requireAuth, inventoryController.processEditPage);
 
 // Delete
-router.get('/delete/:id', inventoryController.performDelete); 
+router.get('/delete/:id',requireAuth, inventoryController.performDelete); 
 
 module.exports = router;
